@@ -1,6 +1,6 @@
 @model User
-<div class="card mt-3 shadow">
-    <h2 class="card-header">Register</h2>
+<div class="card border-primary mt-3 shadow">
+    <h2 class="card-header ">Register</h2>
     <div class="card-body">
         <form asp-action="Register" asp-controller="User" method="post">
             <div class="mb-3">
@@ -29,7 +29,7 @@
                 <span  asp-validation-for="ConfirmPassword" class="form-text text-danger h4"></span>
             </div>
             <div>
-                <input type="submit" value="Register" class="btn btn-dark btn-lg">
+                <input type="submit" value="Register" class="btn btn-primary btn-lg">
             </div>
         </form>
     </div>

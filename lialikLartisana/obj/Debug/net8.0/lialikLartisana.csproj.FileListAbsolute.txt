@@ -37,3 +37,4 @@ C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\obj\Debug\net8.0\refint\li
 C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\obj\Debug\net8.0\lialikLartisana.pdb
 C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\obj\Debug\net8.0\lialikLartisana.genruntimeconfig.cache
 C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\obj\Debug\net8.0\ref\lialikLartisana.dll
+C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\obj\Debug\net8.0\lialikLartisana.sourcelink.json
