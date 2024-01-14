@@ -1,31 +1,29 @@
-<h1>Item Name</h1>
-<div>
-    <div>
-    <img src="" alt="">
-    <div>
-        <img src="" alt="">
-    </div>
-    </div>
-    <div>
-        <p>Description:</p>
+@model Product
+@await Html.PartialAsync("_NavBar")
+
+<div class="home-section">
+    <div style="padding: 100px;">
+        <div class="card">
+            <h1 class="card-header p-4 ">@Model.ProductName</h1>
+                    <div class="row mt-4 mb-4">
+                        <div class="col-6 m-4">
+                            <img src="~/images/bg1.jpg" alt="@Model.ProductName" class="img-fluid rounded border">
+                        </div>
+                        <div class="col m-4">
+                            <h4 class="mb-3">By: <span class="text-muted">@Model.Seller.FirstName @Model.Seller.LastName</span></h3><br>
+                            <h4 class="mb-3">Price: $@Model.Price</h3><br>
+                            <h4 class="mb-3 ">Category: <span class="text-primary"> @Model.Category</span> </h3><br>
+                            <h4 class="mb-3">Description: </h4>
+                            <p class="h5">@Model.Description</p><br>
+                            <h4>Free Shipping : </h4> <p>@Model.FreeShipping</p>
+                        </div>
+                    </div>
+            <div class="text-center m-3 ">
+                <button class="btn btn-lg Cbtn m-3">Buy Product</button>
+                <button class="btn btn-lg btn-warning m-3">Message Owner</button>
+            </div>
+        </div>
+        
         
     </div>
-</div>
-<div>
-    <div>
-        <p>Artist:</p>
-        <p>Price:</p>
-        <p>Category:</p>
-    </div>
-    <div>
-        <p>Published At:</p>
-        <p>Shipping:</p>
-    </div>
-</div>
-<div>
-    <button>Buy</button>
-    <button>Message Seller</button>
-    @* if seller *@
-    <button>Edit</button>
-    <button>Delete</button>
 </div>

@@ -45,4 +45,13 @@ public class ProductsController : Controller
         }
         return View("AddProduct");
     }
+    //----------ShowCraft-----------
+    [HttpGet("products/{ProductId}")]
+    public IActionResult ShowOne(int ProductId)
+    {
+        Product? oneProduct = _context.Products
+        .Include(Product => Product.Seller)
+        .FirstOrDefault(Product => Product.ProductId == ProductId);
+        return View(oneProduct);
+    }
 }
