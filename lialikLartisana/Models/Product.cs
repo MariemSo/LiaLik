@@ -11,6 +11,7 @@ public class Product
     public int UserId { get; set; }
   
     [Required]
+    [Display(Name ="Title")]
     public string ProductName { get; set; }
     [Required]
     public string Description { get; set; }

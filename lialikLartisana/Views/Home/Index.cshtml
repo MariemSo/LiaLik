@@ -1,13 +1,13 @@
 ﻿
 <main role="main">
     <div class="d-flex " style=" height: 100vh; width: 100%;">
-        <div class="col bg-black">
+        <div class="col back">
             <div class="d-flex justify-content-between">
                 <div class="navbar-brand" >
                     <img src="~/Images/Logo.png" width="140" class="d-inline-block align-top" alt="">
                 </div>
                 <div class="pt-4">
-                <a asp-area="" asp-controller="User" asp-action="LogReg">
+                <a asp-controller="User" asp-action="LogReg">
                         <button class="btn btn-info" >Login/Register</button>
                 </a> 
                 </div>
@@ -20,7 +20,7 @@
                 <p>the ultimate platform for artists and artisans to showcase and sell their unique creations. Explore a diverse collection of original art, from paintings to handmade crafts. Our user-friendly marketplace connects buyers with one-of-a-kind pieces while empowering artists to tell their stories and thrive. Join us in celebrating creativity and craftsmanship - LiaLik, where art finds its home."</p>
             </div>
             <div class="text-center space">
-                <button class="btn btn-info">Visit</button>
+                <a asp-controller="Products" asp-action="ShowAll"><button class="btn btn-info">Visit</button></a>
             </div>
         </div>
         <div class="col" >

@@ -238,7 +238,7 @@
 }
 .home-section .text{
   display: inline-block;
-  margin: 18px
+  margin: 50px
 }
 @media (max-width: 420px) {
   .sidebar li .tooltip{

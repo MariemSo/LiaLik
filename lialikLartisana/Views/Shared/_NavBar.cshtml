@@ -1,8 +1,14 @@
+@{
+    int? userIdNullable = Context.Session.GetInt32("userId");
+    int UserId = userIdNullable ?? 0;
 
+}
+  <input type="hidden" name="UserId" >
   <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus icon'></i>
-        <div class="logo_name">LiaLik</div>
+        <div class="logo_name">
+          <img src="~/images/Logo.png" alt="" width="60%">
+        </div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -13,18 +19,18 @@
       </li>
       <li>
       <li>
-       <a href="#">
+       <a asp-controller="Products" asp-action="ShowAll">
          <i class='bx bx-purchase-tag-alt'></i>
          <span class="links_name">All Prodcuts</span>
        </a>
        <span class="tooltip">All Prodcuts</span>
      </li>
      <li>
-       <a href="#">
-         <i class='bx bx-chat' ></i>
-         <span class="links_name">Messages</span>
+       <a asp-controller="Products" asp-action="AddProduct">
+         <i class='bx bx-euro' ></i>
+         <span class="links_name">Sell a Product</span>
        </a>
-       <span class="tooltip">Messages</span>
+       <span class="tooltip">Sell</span>
      </li>
      <li>
        <a href="#">
@@ -55,17 +61,32 @@
        <span class="tooltip">Setting</span>
      </li>
      <li class="profile">
-         <div class="profile-details">
+       
+         @if(UserId == 0 ){
+         
+            <form action="/user/logreg">
+             <div class="profile-details">
+              <button>  
+                  <i class='bx bx-log-in' id="log_out"></i>          
+              </button> 
+             </div>
+          </form>
+       
+         }else{
+          <form asp-action ="Logout" asp-controller="User">
+       
+          <div class="profile-details">
            <img src="profile.jpg" alt="profileImg">
            <div class="name_job">
              <div class="name">Prem Shahi</div>
            </div>
-         </div>
-         <form asp-action ="Logout" asp-controller="User">
-          <button>
+           <button> 
             <i class='bx bx-log-out' id="log_out" ></i>
           </button>
+         </div>   
          </form>
+         }
+         
      </li>
     </ul>
   </div>

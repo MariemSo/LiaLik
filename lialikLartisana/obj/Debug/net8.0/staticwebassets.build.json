@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bTzCXEkybIGtSZ0dYvRLKZDPEZR7KAhe6O+0ygxEJiQ=",
+  "Hash": "IEfITlaWViN1j38bnljDpRI1fWyMs4jKD9YR5vDaQ20=",
   "Source": "lialikLartisana",
   "BasePath": "_content/lialikLartisana",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\wwwroot\\css\\buttons.css",
+      "SourceId": "lialikLartisana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\wwwroot\\",
+      "BasePath": "_content/lialikLartisana",
+      "RelativePath": "css/buttons.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\buttons.css"
     },
     {
       "Identity": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\wwwroot\\css\\index.css",

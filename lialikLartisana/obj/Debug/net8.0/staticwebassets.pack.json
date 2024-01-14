@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\wwwroot\\css\\buttons.css",
+      "PackagePath": "staticwebassets\\css\\buttons.css"
+    },
+    {
       "Id": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
     },
