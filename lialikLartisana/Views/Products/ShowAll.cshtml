@@ -1,5 +1,5 @@
 @{
-    int UserId=(int)Context.Session.GetInt32("userId");
+    int? UserId=(int)Context.Session.GetInt32("userId");
 
 }
 @model List<Product>
@@ -9,18 +9,28 @@
 
 <section class="home-section "> 
   <h1 class="text-center pt-5">All Items</h1>
-  <div class="text">
+  <div class="text center">
 
+      <div class="row row-cols-1">
     @foreach (Product i in Model){
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card m-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                 
+                  @if(i.Images != null &&i.Images.Count != 0){
+                    <img src="@i.Images[0].ImageUrl"
+                    
                     alt="Trendy Pants and Shoes"
-                    class="img-fluid rounded-start"
-                  />
+                    class="img-fluid rounded-start"  />
+                  }
+                  else{
+                    <img src="~/images/LogoWhiteBg.png"
+                    alt="Trendy Pants and Shoes"
+                    class="img-fluid rounded-start"  />
+                  }
+                    
+                    
+                
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -33,18 +43,23 @@
                     </p>
                     @if(UserId==@i.Seller.UserId){
 
-                    <div>
+                    <div class="d-flex ">
                       <button class="btn btn-info">Edit</button>
-                      <button class="btn btn-danger">Delete</button>
+                      <form asp-action="DeleteProduct" asp-controller="Products" asp-route-productId="@i.ProductId" method="post">
+                            <button class="btn btn-danger">Delete</button>
+                      </form>  
                     </div>
                     }
                   </div>
                 </div>
               </div>
             </div>
-          </div>
     }
-    
+          </div>
   </div>
+    <div class="text-center">
+      <a href="/products/new"><button class="btn btn-lg Cbtn">Sell My Product</button>
+</a>
+    </div>
 </section>
 

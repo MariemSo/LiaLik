@@ -1,3 +1,6 @@
+@{
+    int UserId=(int)Context.Session.GetInt32("userId");
+}
 @model Product
 
 @await Html.PartialAsync("_NavBar")
@@ -12,6 +15,7 @@
 
     <div class="card-body">
         <form asp-action="CreateProduct">
+        <input type="hidden" asp-for="UserId" value="@UserId">
         <div class="d-flex">
             <div class=" col mb-3">
                 <div class=" mb-3">
@@ -44,10 +48,10 @@
                 <div class=" mb-3">
                     <select asp-for="Category" class="form-select" aria-label="Default select example">
                         <option selected>Select Category</option>
-                        <option value="Painting">Painting</option>
-                        <option value="Wearable">Wearable</option>
-                        <option value="Decoration">Decoration</option>
-                        <option value="Sculpture">Sculpture</option>
+                        <option value="0">Painting</option>
+                        <option value="1">Wearable</option>
+                        <option value="2">Decoration</option>
+                        <option value="3">Sculpture</option>
                     </select>
                 </div>
                 

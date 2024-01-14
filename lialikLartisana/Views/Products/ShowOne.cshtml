@@ -1,3 +1,7 @@
+@{
+    int UserId=(int)Context.Session.GetInt32("userId");
+
+}
 @model Product
 @await Html.PartialAsync("_NavBar")
 
@@ -18,10 +22,18 @@
                             <h4>Free Shipping : </h4> <p>@Model.FreeShipping</p>
                         </div>
                     </div>
-            <div class="text-center m-3 ">
+            @if (UserId==@Model.Seller.UserId){
+                <div class="text-center m-3 ">
+                <button class="btn btn-lg btn-warning m-3">Edit</button>
+                <button class="btn btn-lg btn-danger m-3">Delete</button>
+            </div>
+            }else{
+                 <div class="text-center m-3 ">
                 <button class="btn btn-lg Cbtn m-3">Buy Product</button>
                 <button class="btn btn-lg btn-warning m-3">Message Owner</button>
             </div>
+            }
+           
         </div>
         
         

@@ -18,7 +18,7 @@ public class ProductsController : Controller
     [HttpGet("products")]
     public IActionResult ShowAll()
     { 
-        List<Product> AllProducts = _context.Products.Include(p => p.Seller).ToList();
+        List<Product> AllProducts = _context.Products.Include(s=>s.Seller).Include(i=>i.Images).ToList();
         return View(AllProducts);
     }
     //------------AddProduct------------
@@ -39,9 +39,10 @@ public class ProductsController : Controller
     {
         if (ModelState.IsValid)
         {
+                System.Console.WriteLine(newProduct.UserId);
                 _context.Add(newProduct);
                 _context.SaveChanges();
-            return RedirectToAction("LogReg", "User");
+            return RedirectToAction("ShowAll");
         }
         return View("AddProduct");
     }
@@ -54,4 +55,29 @@ public class ProductsController : Controller
         .FirstOrDefault(Product => Product.ProductId == ProductId);
         return View(oneProduct);
     }
+    //Delete Product
+     [HttpPost("Product/delete")]
+    public IActionResult DeleteProduct (int ProductId)
+    {
+        Product? ProductToDelete = _context.Products.SingleOrDefault(w => w.ProductId == ProductId);
+
+            if (ProductToDelete == null)
+            {
+                // Handle this case differently, show an error message, or redirect to an error page
+                return RedirectToAction("ShowAll");
+            }
+
+            // Check if the user deleting is the one logged in
+            if (ProductToDelete.UserId != HttpContext.Session.GetInt32("userId"))
+            {
+                return RedirectToAction("ShowAll");
+            }
+
+            _context.Products.Remove(ProductToDelete);
+            _context.SaveChanges();
+
+            // Redirect to the Product list or another appropriate action
+            return RedirectToAction("ShowAll");
+    }
+
 }
