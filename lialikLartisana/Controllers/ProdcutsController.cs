@@ -79,5 +79,30 @@ public class ProductsController : Controller
             // Redirect to the Product list or another appropriate action
             return RedirectToAction("ShowAll");
     }
+    [HttpGet("products/{ProductId}/edit")]
+    public IActionResult EditProduct(int ProductId)
+    {
+        Product? ProductToEdit = _context.Products
+            .SingleOrDefault(d => d.ProductId == ProductId);
+        return View( ProductToEdit);
+    }
+    [HttpPost("/products/update/{ProductId}")]
+    public IActionResult UpdateProduct(int ProductId, Product newestProduct)
+    {
+        Product? oldProduct = _context.Products.FirstOrDefault(b => b.ProductId ==ProductId);
+         if (ModelState.IsValid)
+        {
+            oldProduct.ProductName = newestProduct.ProductName;
+            oldProduct.Category = newestProduct.Category;
+            oldProduct.Description = newestProduct.Description;
+            oldProduct.Price = newestProduct.Price;
+            oldProduct.FreeShipping = newestProduct.FreeShipping;
+            oldProduct.UpdatedAt = newestProduct.UpdatedAt;
+            _context.SaveChanges();
 
+            return RedirectToAction("Products",newestProduct);
+        }
+        return View("EditProduct", oldProduct);
+
+    }
 }
