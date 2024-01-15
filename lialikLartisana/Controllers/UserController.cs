@@ -95,7 +95,7 @@ public class UserController : Controller
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
-        return RedirectToAction("index");
+        return RedirectToAction("Index","Home");
     }
 
 
