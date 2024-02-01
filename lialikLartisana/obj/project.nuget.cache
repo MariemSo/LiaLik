@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kml46XqkF/uYubqcsdCmZMAd7ft2HlN4ey3UJn66lxbSA9F+n246LJVAJVMTHxoD+/mQYviD4VQjSGTtMblCEQ==",
+  "dgSpecHash": "uztnWlPv+S/+nSDiUx7MEbloaxgEr/vUagHW+oTaZp+0KllEfW0NFABIk+Vjkbj8EEKeZ8IK+E6CZ/YxEPOr0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
+  "projectFilePath": "C:\\Users\\souay\\OneDrive\\Bureau\\Coding\\CodingDojo\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\souay\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\souay\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

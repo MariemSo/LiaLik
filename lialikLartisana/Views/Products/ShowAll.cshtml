@@ -1,6 +1,5 @@
 @{
-    int UserId = (int)Context.Session.GetInt32("userId");
-
+    int? userId = ViewData["UserId"] as int? ?? 0;
 }
 @model List<Product>
 
@@ -41,7 +40,7 @@
                     <p class="card-text">
                       <small class="text-muted">@i.Seller.FirstName @i.Seller.LastName</small>
                     </p>
-                    @if(UserId==@i.Seller.UserId){
+                    @if(userId==@i.Seller.UserId){
 
                     <div class="d-flex ">
                       <form asp-action="EditProduct" asp-controller="Products" asp-route-productId="@i.ProductId" method="get">

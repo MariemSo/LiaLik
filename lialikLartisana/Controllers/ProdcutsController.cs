@@ -18,7 +18,9 @@ public class ProductsController : Controller
     [HttpGet("products")]
     public IActionResult ShowAll()
     { 
+        int? userId = HttpContext.Session.GetInt32("userId");
         List<Product> AllProducts = _context.Products.Include(s=>s.Seller).Include(i=>i.Images).ToList();
+        ViewData["UserId"] = userId;
         return View(AllProducts);
     }
     //------------AddProduct------------
@@ -79,6 +81,7 @@ public class ProductsController : Controller
             // Redirect to the Product list or another appropriate action
             return RedirectToAction("ShowAll");
     }
+    //Edit Product
     [HttpGet("products/{ProductId}/edit")]
     public IActionResult EditProduct(int ProductId)
     {
@@ -97,12 +100,12 @@ public class ProductsController : Controller
             oldProduct.Description = newestProduct.Description;
             oldProduct.Price = newestProduct.Price;
             oldProduct.FreeShipping = newestProduct.FreeShipping;
-            oldProduct.UpdatedAt = newestProduct.UpdatedAt;
+            oldProduct.UpdatedAt = DateTime.Now;
             _context.SaveChanges();
 
-            return RedirectToAction("Products",newestProduct);
-        }
-        return View("EditProduct", oldProduct);
+            return RedirectToAction("ShowOne", new { ProductId = oldProduct.ProductId }) ;
+         }
+        return View("ShowAll");
 
     }
 }

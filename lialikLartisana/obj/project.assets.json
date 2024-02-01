@@ -786,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
+      "projectUniqueName": "C:\\Users\\souay\\OneDrive\\Bureau\\Coding\\CodingDojo\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
       "projectName": "lialikLartisana",
-      "projectPath": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
+      "projectPath": "C:\\Users\\souay\\OneDrive\\Bureau\\Coding\\CodingDojo\\LiaLik\\lialikLartisana\\lialikLartisana.csproj",
       "packagesPath": "C:\\Users\\souay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\souay\\OneDrive\\Bureau\\LiaLik\\lialikLartisana\\obj\\",
+      "outputPath": "C:\\Users\\souay\\OneDrive\\Bureau\\Coding\\CodingDojo\\LiaLik\\lialikLartisana\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\souay\\AppData\\Roaming\\NuGet\\NuGet.Config",

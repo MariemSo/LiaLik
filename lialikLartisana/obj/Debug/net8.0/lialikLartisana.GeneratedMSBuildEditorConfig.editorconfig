@@ -9,67 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lialikLartisana
 build_property.RootNamespace = lialikLartisana
-build_property.ProjectDir = C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana\
+build_property.ProjectDir = C:\Users\souay\OneDrive\Bureau\Coding\CodingDojo\LiaLik\lialikLartisana\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\souay\OneDrive\Bureau\LiaLik\lialikLartisana
+build_property.MSBuildProjectDirectory = C:\Users\souay\OneDrive\Bureau\Coding\CodingDojo\LiaLik\lialikLartisana
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Home/Index.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Products/AddProduct.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Products/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Products/EditProduct.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Products/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Products/ShowAll.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Products/ShowAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvd0FsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Products/ShowOne.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Products/ShowOne.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvd09uZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Shared/Error.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Shared/_NavBar.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Shared/_NavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/User/LogReg.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/User/LogReg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dSZWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/User/_Login.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/User/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/User/_Register.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/User/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/_ViewImports.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/_ViewStart.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/souay/OneDrive/Bureau/LiaLik/lialikLartisana/Views/Shared/_Layout.cshtml]
+[C:/Users/souay/OneDrive/Bureau/Coding/CodingDojo/LiaLik/lialikLartisana/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ex6586q250

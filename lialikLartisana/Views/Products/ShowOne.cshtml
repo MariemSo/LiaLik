@@ -24,8 +24,12 @@
                     </div>
             @if (UserId==@Model.Seller.UserId){
                 <div class="text-center m-3 ">
-                <button class="btn btn-lg btn-warning m-3">Edit</button>
-                <button class="btn btn-lg btn-danger m-3">Delete</button>
+                    <form asp-action="EditProduct" asp-route-productId="@Model.ProductId" method="post" asp-controller="Products">
+                        <button class="btn btn-lg btn-warning m-3">Edit</button>
+                    </form>
+                <form asp-action="DeleteProduct" asp-controller="Products" asp-route-productId="@Model.ProductId" method="post">
+                            <button class="btn btn-danger">Delete</button>
+                      </form>  
             </div>
             }else{
                  <div class="text-center m-3 ">
@@ -35,7 +39,5 @@
             }
            
         </div>
-        
-        
     </div>
 </div>
