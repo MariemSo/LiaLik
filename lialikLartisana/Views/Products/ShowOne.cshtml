@@ -1,6 +1,5 @@
 @{
-    int UserId=(int)Context.Session.GetInt32("userId");
-
+    int? userId = ViewData["UserId"] as int? ?? 0;
 }
 @model Product
 @await Html.PartialAsync("_NavBar")
@@ -22,9 +21,9 @@
                             <h4>Free Shipping : </h4> <p>@Model.FreeShipping</p>
                         </div>
                     </div>
-            @if (UserId==@Model.Seller.UserId){
+            @if (userId==@Model.Seller.UserId){
                 <div class="text-center m-3 ">
-                    <form asp-action="EditProduct" asp-route-productId="@Model.ProductId" method="post" asp-controller="Products">
+                    <form asp-action="EditProduct" asp-route-ProductId="@Model.ProductId" method="post" asp-controller="Products">
                         <button class="btn btn-lg btn-warning m-3">Edit</button>
                     </form>
                 <form asp-action="DeleteProduct" asp-controller="Products" asp-route-productId="@Model.ProductId" method="post">

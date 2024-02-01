@@ -18,9 +18,10 @@ public class ProductsController : Controller
     [HttpGet("products")]
     public IActionResult ShowAll()
     { 
-        int? userId = HttpContext.Session.GetInt32("userId");
-        List<Product> AllProducts = _context.Products.Include(s=>s.Seller).Include(i=>i.Images).ToList();
+        int? userId = HttpContext.Session.GetInt32(key: "userId");
         ViewData["UserId"] = userId;
+        List<Product> AllProducts = _context.Products.Include(s=>s.Seller).Include(i=>i.Images).ToList();
+        
         return View(AllProducts);
     }
     //------------AddProduct------------
@@ -92,7 +93,7 @@ public class ProductsController : Controller
     [HttpPost("/products/update/{ProductId}")]
     public IActionResult UpdateProduct(int ProductId, Product newestProduct)
     {
-        Product? oldProduct = _context.Products.FirstOrDefault(b => b.ProductId ==ProductId);
+         Product oldProduct = _context.Products.FirstOrDefault(b => b.ProductId == ProductId);
          if (ModelState.IsValid)
         {
             oldProduct.ProductName = newestProduct.ProductName;
@@ -103,9 +104,7 @@ public class ProductsController : Controller
             oldProduct.UpdatedAt = DateTime.Now;
             _context.SaveChanges();
 
-            return RedirectToAction("ShowOne", new { ProductId = oldProduct.ProductId }) ;
-         }
-        return View("ShowAll");
-
+            return RedirectToAction("ShowAll");         }
+        return View("EditProduct", oldProduct);
     }
 }

@@ -14,7 +14,7 @@
    </div>
 
     <div class="card-body">
-        <form asp-action="UpdateProduct" asp-controller="Products" asp-route-ProductId="ProductId" method="post">
+        <form asp-action="UpdateProduct" asp-controller="Products" asp-route-ProductId="@Model.ProductId" method="post">
         <input type="hidden" asp-for="UserId" value="@UserId">
         <div class="d-flex">
             <div class=" col mb-3">
